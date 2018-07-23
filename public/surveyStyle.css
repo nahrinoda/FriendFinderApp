@@ -1,0 +1,28 @@
+form {
+    padding: 1.5rem;
+    border: rgba(78, 76, 76, 0.322) ;
+    border-style: dotted;
+    border-radius: 10px;
+    
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(22, 12, 116, 0.644);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 1rem;
+    line-height: 1;
+    text-shadow: rgba(78, 76, 76, 0.294) 0.2rem 0.2rem 0;
+    position: relative;
+}
+
+p, h3, h5 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(90, 85, 85);
+}
+
+.breadcrumb{
+    background-color: transparent;
+}
