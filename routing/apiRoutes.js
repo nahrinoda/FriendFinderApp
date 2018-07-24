@@ -1,15 +1,15 @@
-var friendData = require('../data/friends.js');
+var friendData = require('../app/data/friends.js');
 
 module.exports = function (app) {
 
     // `apiRoutes.js` file should contain two routes:
     // GET route with the url`/api/friends`. This will be used to display a JSON of all possible friends.
-    app.get('/api/friends', function (req, res) {
+    app.get('./api/data/friends', function (req, res) {
         // Display friends data in json format
         res.json(friendData);
     });
 
-    app.post('/api/friends', function (req, res) {
+    app.post('./api/data/friends', function (req, res) {
         var userInput = req.body;
         var newFriendPoints = userInput.scores;
         var sameName = '';
