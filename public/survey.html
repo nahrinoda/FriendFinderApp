@@ -161,7 +161,7 @@
                         </select>
                     </div>
                     <hr>
-                    <button class="btn btn-primary btn-md btn-block" type="submit"><img src="https://png.icons8.com/material-rounded/20/ffffff/ok.png"><tr> </tr>Submit </button>
+                    <button id="test" data-target="#exampleModalLong" class="btn btn-primary btn-md btn-block" type="submit"><img src="https://png.icons8.com/material-rounded/20/ffffff/ok.png"><tr> </tr>Submit </button>
                 </form>
                 <br>
             </div>
@@ -219,12 +219,16 @@
         }
      
     });
+
+    $("#test").click(function(){
+        console.log('test button worked'); 
+    }); 
     
-    $.ajax({
-        type: "POST",
-        url: './api/data/friends',
-        data: mydata
-    });
+    // $.ajax({
+    //     type: "POST",
+    //     url: './api/data/friends',
+    //     data: mydata
+    // });
     
     </script>
 
