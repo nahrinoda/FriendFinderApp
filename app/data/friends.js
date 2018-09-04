@@ -1,4 +1,4 @@
-var friendsArray = [
+let friends = [
     {
         "name":"Bubble Smith",
         "photo":"https://favim.com/orig/201104/23/Favim.com-22612.jpg",
@@ -114,4 +114,4 @@ var friendsArray = [
 
 ];
 
-module.exports = friendsArray;
+module.exports = friends;

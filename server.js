@@ -1,26 +1,27 @@
 // Dependencies
-var bodyParser = require('body-parser');
+// Series of npm packages
+// =============================================================
 var express = require('express');
-
-
-// Create express server
+var bodyParser = require('body-parser');
+var path = require('path');
+// Seed data for "database"
+var friends = require('./app/data/friends.js');
+// =============================================================
 var app = express();
+const PORT = process.env.PORT || 8080;
 
-// PORT will work on local host 8080
-var PORT = process.env.PORT || 8080;
+//makes static assets in the public folder available (style.css)
+app.use(express.static('app/public'));
 
-// Serve static files images, CSS and JavaScript in directory called public
-app.use(express.static('public'))
-
-// Standard bodyParser
-app.use(bodyParser.urlencoded({ extended: true}));
-// parse application/json
+// Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-// Add apiRoutes file to server
-require('./routing/apiRoutes.js')(app);
-// Add htmlRoutes file to server
-require('./routing/htmlRoutes')(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+//app.use(express.static(path.join(__dirname, '/app/public/')));
 
 // Check if server is listening
 app.listen(PORT, function () {

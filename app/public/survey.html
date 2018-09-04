@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Friend Finder App</title>
+
+    <!-- Bootstrap CSS link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+    <!--CSS stylesheet link-->
+    <link href="./assets/css/surveyStyle.css" type="text/css" rel="stylesheet" /> 
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col" id="mainpanel-content">
+                <br>
+                <h2>Survey Questions</h2>
+                <p class="font-italic">Tell me about yourself (ALL fields below are required)!</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <h3>About You</h3>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" ><h5>Name: </h5></label>
+                        <input type="text" class="validate form-control" id="name" placeholder="Samantha Nuggets" required>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="photo">
+                        <label class="validate form-control custom-file-label" for="customFile" required>Upload your photo</label>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field" >
+                        <label for="formGroupExampleInput"><h5>Q1| Your mind is always buzzing with unexplored ideas and plans.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q1">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q2| Generally speaking, you rely more on your experience than your imagination.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q2">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput" ><h5>Q3| You find it easy to stay relaxed and focused even when there is some pressure.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q3">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q4| You rarely do something just out of sheer curiosity.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q4">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q5| People can rarely upset you.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q5">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q6| It is often difficult for you to relate to other people’s feelings.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q6">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q7| In a discussion, truth should be more important than people’s sensitivities.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q7">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q8| You rarely get carried away by fantasies and ideas.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q8">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q9| You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q9">
+                            <option value=""></option>
+                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group input-field">
+                        <label for="formGroupExampleInput"><h5>Q10| You feel more energetic after spending time with a group of people.</h5></label>
+                        <select data-placeholder="" class="chosen-select" id="q10">
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <button id="submit" data-target="#exampleModalLong" class="btn btn-primary btn-md btn-block" type="submit" data-toggle="modal" data-target="#friendModal"><img src="https://png.icons8.com/material-rounded/20/ffffff/ok.png"><tr> </tr>Submit </button>
+                </form>
+                <br>
+            </div>
+        </div>
+        <!-- link to 'friends' informaton-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/api/friends" target="_blank">API Friends List</a></li>
+                <li class="breadcrumb-item"><a href="https://github.com/nahrinoda/FriendFinder-App." target="_blank">GitHub Repo</a></li> 
+            </ol>
+        </nav>
+    </div>
+
+<!-- Modal to display the compatible match-->
+  <div id='resultsModal' class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+   
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Best Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id='matchImg' src="" alt="user match image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="closeModal" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- jQuery Reference -->
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+ 
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+// Grab the URL of the website
+var currentURL = window.location.origin;
+// Capture the form inputs
+$("#submit").on("click", function(){
+//event.preventDefault();
+ if( ($('#name').val().trim() !== "") && ($('#photo').val().trim() !== "") ) {
+     // Create an object for the user's data
+     var userData = {
+         name: $("#name").val(),
+         photo: $("#photo").val(),
+         scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+     }
+     // AJAX post the data to the friends API.
+     $.post(currentURL + "/api/friends", userData, function(data){
+       // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+       $("#matchName").text(data.name);
+       $('#matchImg').attr("src", data.photo);
+       // Show the modal with the best match
+       $("#resultsModal").modal('toggle');
+       // clear the input fields in the form
+       $("#name").val("");
+       $("#photo").val("");
+     });
+ } else {
+     $(".modal-title").text("Missing required information");
+     $(".modal-body").html("<h3>Please complete the form before submitting</h3>");
+     $("#resultsModal").modal('toggle');
+ }
+ return false;
+});
+// modal logic
+$('#closeModal').click(function() {
+ $.get('/',function(req,res){
+ location.replace(res);
+ })
+});
+</script>
+
+</body>
+</html>
+
