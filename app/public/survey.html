@@ -38,15 +38,14 @@
                         <input type="text" class="validate form-control" id="name" placeholder="Samantha Nuggets" required>
                     </div>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="photo">
-                        <label class="validate form-control custom-file-label" for="customFile" required>Upload your photo</label>
+                            <input type="text" name="" id="photo" class="form-control" required >
                     </div>
                     <hr>
                     <div class="form-group input-field" >
                         <label for="formGroupExampleInput"><h5>Q1| Your mind is always buzzing with unexplored ideas and plans.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q1">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -57,8 +56,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q2| Generally speaking, you rely more on your experience than your imagination.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q2">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -69,8 +68,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput" ><h5>Q3| You find it easy to stay relaxed and focused even when there is some pressure.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q3">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -81,8 +80,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q4| You rarely do something just out of sheer curiosity.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q4">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -93,8 +92,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q5| People can rarely upset you.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q5">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -105,8 +104,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q6| It is often difficult for you to relate to other people’s feelings.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q6">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -117,8 +116,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q7| In a discussion, truth should be more important than people’s sensitivities.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q7">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -129,8 +128,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q8| You rarely get carried away by fantasies and ideas.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q8">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -141,8 +140,8 @@
                     <div class="form-group input-field">
                         <label for="formGroupExampleInput"><h5>Q9| You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5></label>
                         <select data-placeholder="" class="chosen-select" id="q9">
-                            <option value=""></option>
-                            <option selected="selected" value="1">1 (Strongly Disagree)</option>
+                            <option selected="selected" value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -167,6 +166,28 @@
                 <br>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+      
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="modal-title"><strong>Your most compatible friend</strong></p>
+                </div>
+                <div class="modal-body">
+                  <p id="matchName"></p>
+                  <img id="matchImg" src ="" alt="" height="350" width="300">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+
         <!-- link to 'friends' informaton-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -176,33 +197,10 @@
         </nav>
     </div>
 
-<!-- Modal to display the compatible match-->
-  <div id='resultsModal' class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-   
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Best Match</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h2 id="matchName"></h2>
-          <img id='matchImg' src="" alt="user match image">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" id="closeModal" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- jQuery Reference -->
-  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
- 
- <!-- Latest compiled and minified JavaScript -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
 // Grab the URL of the website
 var currentURL = window.location.origin;

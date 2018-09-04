@@ -1,4 +1,4 @@
-let friends = [
+var friends = [
     {
         "name":"Bubble Smith",
         "photo":"https://favim.com/orig/201104/23/Favim.com-22612.jpg",
